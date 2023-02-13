@@ -3,7 +3,7 @@ agent any
 stages {
 stage('devops class') {
 steps {
-echo "success"
+build(job:'devops class',propagate: false)
 }
 }
 stage('tester') {
